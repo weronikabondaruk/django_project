@@ -1,0 +1,677 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Univeristy of Bolton</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/animate.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/magnific-popup.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/themify-icons.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/slick.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/meanmenu.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/responsive.css' %}">
+</head>
+
+<body>
+    <!-- header-start -->
+    <header id="home">
+        <div class="header-area">
+            <!-- header-bottom -->
+            <div class="header-bottom-area header-sticky" style="transition: .6s;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-6">
+                            <div class="logo">
+                                <a href="home.html">
+                                    <img src="{% static 'home/img/logo/logo.png' %}" width="250" height="65" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-6 col-6">
+                            <div class="header-bottom-icon f-right">
+                                <ul>
+                                    <li>
+                                        <a href="{% url 'LoginUser' %}">SIGN IN</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'RegisterUser' %}">SIGN UP</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-menu f-right">
+                                <nav id="mobile-menu" style="display: block;">
+                                    <ul>
+                                        <li>
+                                            <a href="">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="">about us</a>
+                                        </li>
+                                        <li>
+                                            <a href="">faq</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Courses</a>
+                                        </li>
+                                        <li>
+                                            <a href="">NEWS</a>
+                                        </li>
+                                        <li>
+                                            <a href="">CONTACT</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile-menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /end header-bottom -->
+        </div>
+    </header>
+    <!-- header-end -->
+    <!-- slider-start -->
+    <div class="slider-area pos-relative">
+        <div class="slider-active">
+            <div class="single-slider slider-height d-flex align-items-center justify-content-center" style="background-image: url('{% static 'home/img/slider/slider_bg_1.jpg'%}')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-9 col-md-12">
+                            <div class="slider-content slider-content-2">
+                                <h1 class="white-color f-700" data-animation="fadeInUp" data-delay=".2s"><span>Start your journey</span><br>January 2021.</h1>
+                                <p data-animation="fadeInUp" data-delay=".4s">Challenging times need us to think differently, let the <br> University of Bolton support your career ambitions.</p>
+                                <button class="theme-btn" data-animation="fadeInUp" data-delay=".6s"><span class="btn-text">apply now</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slider slider-height d-flex align-items-center justify-content-center" style="background-image: url('{% static 'home/img/slider/2.jpg'%}')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 col-md-12 offset-xl-2">
+                            <div class="slider-content slider-content-2 text-center">
+                                <h1 class="white-color f-700" data-animation="fadeInUp" data-delay=".2s"><span>Let's chat</span><br>Wednesday 2 - 4pm.</h1>
+                                <p data-animation="fadeInUp" data-delay=".4s">Join our live chat sessions every Wednesday 2 - 4pm. Talk with academics and fellow students. <br> Speak directly with course leaders, international staff, admissions, fees and funding, or recruitment. </p>
+                                <button class="theme-btn" data-animation="fadeInUp" data-delay=".6s"><span class="btn-text">chat now</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slider slider-height d-flex align-items-center justify-content-center" style="background-image: url('{% static 'home/img/slider/3.jpg'%}')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-9 col-md-12">
+                            <div class="slider-content slider-content-2">
+                                <h1 class="white-color f-700" data-animation="fadeInUp" data-delay=".2s"><span>Proud to put you,</span><br>the student first.</h1>
+                                <p data-animation="fadeInUp" data-delay=".4s">At the University of Bolton, we pride ourselves on our student-focused approach to learning, supporting  <br> your career ambitions, and, quite simply, ensuring you enjoy your time at University; through quality teaching, passionate lecturers, supportive environments, great facilities, and on graduation, helping you find a job. <br> </p>
+                                <button class="theme-btn" data-animation="fadeInUp" data-delay=".6s"><span class="btn-text">read more</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider-end -->
+    <!-- about start -->
+    <div id="about" class="about-area pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-7">
+                    <div class="about-title-section mb-30">
+                        <h1>Why Diagnostic, Intervention and Support System?</h1>
+                        <p>Have you decided to pursue the career of your dream but you have no required qualifications? Once you have made a decision to join the university, it can be <br> daunting to find out where to start. We are here to help!</p>
+                        <p>Diagnostic, Intervention and Support System helps students from various backgrounds <br> to acquire necessary skills to fulfill their academic potential. DISS analyses your skills and knowledge, making it easy to recommend supplementary courses that will be the best fit for you. What are you waiting for? Join today!</p>
+                        <button class="theme-btn blue-bg-border mt-20"><span class="btn-text">join now</span></button>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5">
+                    <div class="about-right-img mb-30">
+                        <img src="{% static 'home/img/about/about-right.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-65">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="feature-wrapper mb-30">
+                        <div class="feature-title-heading">
+                            <h3>2021 Intake</h3>
+                            <span>01</span>
+                        </div>
+                        <div class="feature-text">
+                            <p>Don’t delay your future success until next year. Enrol this January with the University that proudly puts you and your needs first.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="feature-wrapper mb-30">
+                        <div class="feature-title-heading">
+                            <h3>View our courses</h3>
+                            <span>02</span>
+                        </div>
+                        <div class="feature-text">
+                            <p>Full-time and part-time January 2021 courses currently available to Home and EU students are listed here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="feature-wrapper mb-30">
+                        <div class="feature-title-heading">
+                            <h3>How to apply </h3>
+                            <span>03</span>
+                        </div>
+                        <div class="feature-text">
+                            <p>Applying to the University of Bolton is simple, and we are here to help you every step of the way.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about end -->
+    <!-- courses start -->
+    <div id="courses" class="courses-area courses-bg-height pt-100 pb-70" style="background-image: url('{% static 'home/img/courses/courses_bg.png'%}')">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <div class="section-title mb-50 text-center">
+                        <div class="section-title-heading mb-20">
+                            <h1 class="white-color">Our Most Popular Courses</h1>
+                        </div>
+                        <div class="section-title-para">
+                            <p class="white-color">View the list of our most frequently undertaken courses by <br> thousands of students around United Kingdom.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="courses-list">
+                <div class="row courses-active">
+                    <div class="col-xl-12">
+                        <div class="courses-wrapper course-radius-none mb-30">
+                            <div class="courses-thumb">
+                                <a href=""><img src="{% static 'home/img/courses/single_courses_thumb_01.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="course-main-content clearfix">
+                                <div class="courses-content">
+                                    <div class="courses-category-name">
+                                        <span>
+                                            <a href="#">Business</a>
+                                        </span>
+                                    </div>
+                                    <div class="courses-heading">
+                                        <h1><a href="">Business Management</a></h1>
+                                    </div>
+                                    <div class="courses-para">
+                                        <p>Our graduates receive the CMI Level 5 Diploma in Leadership and Management.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses-wrapper-bottom clearfix">
+                                <div class="courses-icon d-flex f-left">
+                                    <div class="courses-single-icon">
+                                        <span class="ti-user"></span>
+                                        <span class="user-number">849</span>
+                                    </div>
+                                    <div class="courses-single-icon">
+                                        <span class="ti-heart"></span>
+                                        <span class="user-number">807</span>
+                                    </div>
+                                </div>
+                                <div class="courses-button f-right">
+                                    <a href="">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="courses-wrapper course-radius-none mb-30">
+                            <div class="courses-thumb"> 
+                                <a href=""><img src="{% static 'home/img/courses/single_courses_thumb_02.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="course-main-content clearfix">
+                                <div class="courses-content">
+                                    <div class="courses-category-name">
+                                        <span>
+                                            <a href="#">Science</a>
+                                        </span>
+                                    </div>
+                                    <div class="courses-heading">
+                                        <h1><a href="">Software Engineering</a></h1>
+                                    </div>
+                                    <div class="courses-para">
+                                        <p>Our university offers you the chance to enter this dynamic world of digital technology.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses-wrapper-bottom clearfix">
+                                <div class="courses-icon d-flex f-left">
+                                    <div class="courses-single-icon">
+                                        <span class="ti-user"></span>
+                                        <span class="user-number">1045</span>
+                                    </div>
+                                    <div class="courses-single-icon">
+                                        <span class="ti-heart"></span>
+                                        <span class="user-number">973</span>
+                                    </div>
+                                </div>
+                                <div class="courses-button f-right">
+                                    <a href="">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="courses-wrapper course-radius-none mb-30">
+                            <div class="courses-thumb"> 
+                                <a href=""><img src="{% static 'home/img/courses/single_courses_thumb_03.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="course-main-content clearfix">
+                                <div class="courses-content">
+                                    <div class="courses-category-name">
+                                        <span>
+                                            <a href="#">Health</a>
+                                        </span>
+                                    </div>
+                                    <div class="courses-heading">
+                                        <h1><a href="">Nursing</a></h1>
+                                    </div>
+                                    <div class="courses-para">
+                                        <p>Ranked as number one in England for student satisfaction by The Complete University Guide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses-wrapper-bottom clearfix">
+                                <div class="courses-icon d-flex f-left">
+                                    <div class="courses-single-icon">
+                                        <span class="ti-user"></span>
+                                        <span class="user-number">659</span>
+                                    </div>
+                                    <div class="courses-single-icon">
+                                        <span class="ti-heart"></span>
+                                        <span class="user-number">624</span>
+                                    </div>
+                                </div>
+                                <div class="courses-button f-right">
+                                    <a href="">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="courses-wrapper course-radius-none mb-30">
+                            <div class="courses-thumb">
+                                <a href=""><img src="{% static 'home/img/courses/single_courses_thumb_04.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="course-main-content clearfix">
+                                <div class="courses-content">
+                                    <div class="courses-category-name">
+                                        <span>
+                                            <a href="#">Health</a>
+                                        </span>
+                                    </div>
+                                    <div class="courses-heading">
+                                        <h1><a href="">Psychology</a></h1>
+                                    </div>
+                                    <div class="courses-para">
+                                        <p> A chance to learn in a supportive environment with excellent teaching and laboratory facilities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses-wrapper-bottom clearfix">
+                                <div class="courses-icon d-flex f-left">
+                                    <div class="courses-single-icon">
+                                        <span class="ti-user"></span>
+                                        <span class="user-number">768</span>
+                                    </div>
+                                    <div class="courses-single-icon">
+                                        <span class="ti-heart"></span>
+                                        <span class="user-number">539</span>
+                                    </div>
+                                </div>
+                                <div class="courses-button f-right">
+                                    <a href="">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- courses end -->
+
+    <!-- video start -->
+    <div class="video-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="video-wrapper text-center">
+                        <div class="video-content">
+                            <a class="popup-video" href="https://www.youtube.com/watch?v=WIh15eEd5N8"><img src="{% static 'home/img/video/play_icon.png' %}" alt=""></a> 
+                            <span>Watch Our Welcoming Video</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- video end -->
+
+    <!-- team start -->
+    <div class="team-area pt-95 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <div class="section-title mb-50 text-center">
+                        <div class="section-title-heading mb-20">
+                            <h1 class="primary-color">Our Experience Advisors</h1>
+                        </div>
+                        <div class="section-title-para">
+                            <p class="gray-color">Welcome to the staff portal. We hope that on the page, you will find everything that you need at your fingertips.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-list">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="team-wrapper mb-30">
+                            <div class="team-thumb">  
+                                <img src="{% static 'home/img/team/teammember1.jpg' %}" alt="">
+                            </div>
+                            <div class="team-social-info text-center">
+                                <div class="team-social-para">
+                                    <p>Mr Bynum is our number one English Teacher specialising in ancient english literature. </p>
+                                </div>
+                                <div class="team-social-icon-list">
+                                    <ul>
+                                        <li><a href="#"><span class="ti-facebook"></span></a></li>
+                                        <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+                                        <li><a href="#"><span class="ti-google"></span></a></li>
+                                        <li><a href="#"><span class="ti-linkedin"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-teacher-info text-center">
+                                <h1>Chase M. Bynum</h1>
+                                <h2>English Teacher</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="team-wrapper mb-30">
+                            <div class="team-thumb"> 
+                                <img src="{% static 'home/img/team/teammember2.jpg' %}" alt="">
+                            </div>
+                            <div class="team-social-info text-center">
+                                <div class="team-social-para">
+                                    <p>Brenda is one of our newest team members and teaches a wide variety of CSE courses.</p>
+                                </div>
+                                <div class="team-social-icon-list">
+                                    <ul>
+                                        <li><a href="#"><span class="ti-facebook"></span></a></li>
+                                        <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+                                        <li><a href="#"><span class="ti-google"></span></a></li>
+                                        <li><a href="#"><span class="ti-linkedin"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-teacher-info text-center">
+                                <h1>Brenda C. Garcia</h1>
+                                <h2>CSE Teacher</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="team-wrapper mb-30">
+                            <div class="team-thumb"> 
+                                <img src="{% static 'home/img/team/teammember3.jpg' %}" alt="">
+                            </div>
+                            <div class="team-social-info text-center">
+                                <div class="team-social-para">
+                                    <p>Marc has been with us for 4 years and whilst teaching he has achieved his doctorate in mathematics.</p>
+                                </div>
+                                <div class="team-social-icon-list">
+                                    <ul>
+                                        <li><a href="#"><span class="ti-facebook"></span></a></li>
+                                        <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+                                        <li><a href="#"><span class="ti-google"></span></a></li>
+                                        <li><a href="#"><span class="ti-linkedin"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-teacher-info text-center">
+                                <h1>Marc K. Bruhn</h1>
+                                <h2>Math Teacher</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="team-wrapper mb-30">
+                            <div class="team-thumb"> 
+                                <img src="{% static 'home/img/team/teammember4.jpg' %}"  alt="">
+                            </div>
+                            <div class="team-social-info text-center">
+                                <div class="team-social-para">
+                                    <p>Mary loves dogs and long walks on the beach. </p>
+                                </div>
+                                <div class="team-social-icon-list">
+                                    <ul>
+                                        <li><a href="#"><span class="ti-facebook"></span></a></li>
+                                        <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+                                        <li><a href="#"><span class="ti-google"></span></a></li>
+                                        <li><a href="#"><span class="ti-linkedin"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="team-teacher-info text-center">
+                                <h1>Mary M. Douglas</h1>
+                                <h2>English Teacher</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- team end -->
+   
+    <!-- subscribe start -->
+    <div class="subscribe-area">
+        <div class="container">
+            <div class="subscribe-box">
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-12">
+                        <div class="row justify-content-between">
+                            <div class="col-xl-6 col-lg-7 col-md-8">
+                                <div class="subscribe-text">
+                                    <h1>Subscribe</h1>
+                                    <span>Enter your email and get latest updates and offers subscribe us</span>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-5 col-md-4 justify-content-end">
+                                <div class="email-submit-form">
+                                    <div class="subscribe-form">
+                                        <form action="#">
+                                            <input placeholder="Enter your email" type="email">
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- subscribe end -->
+    <!-- footer start -->
+    <footer id="Contact">
+        <div class="footer-area primary-bg pt-150">
+            <div class="container">
+                <div class="footer-top pb-35">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-30">
+                                <div class="footer-logo">
+                                    <img src="{% static 'home/img/logo/logo.png' %}" width="230" height="60"  alt="">
+                                </div>
+                                <div class="footer-para">
+                                    <p>For any further enquiries please contact us via any of the listed sources. Our advisors will reply to you within three days. For any immiediate cases please visit our office. </p>
+                                </div>
+                                <div class="footer-socila-icon">
+                                    <span>Follow Us</span>
+                                    <div class="footer-social-icon-list">
+                                        <ul>
+                                            <li><a href="#"><span class="ti-facebook"></span></a></li>
+                                            <li><a href="#"><span class="ti-twitter-alt"></span></a></li>
+                                            <li><a href="#"><span class="ti-dribbble"></span></a></li>
+                                            <li><a href="#"><span class="ti-google"></span></a></li>
+                                            <li><a href="#"><span class="ti-pinterest"></span></a></li>
+                                            <li><a href="#"><span class="ti-instagram"></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="footer-widget mb-30">
+                                <div class="footer-heading">
+                                    <h1>Quick Links</h1>
+                                </div>
+                                <div class="footer-menu clearfix">
+                                    <ul>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Condition</a></li>
+                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                        <li><a href="#">Our Staff</a></li>
+                                        <li><a href="#">COVID-19</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Who we are</a></li>
+                                        <li><a href="#">Our Courses</a></li>
+                                        <li><a href="#">Recent Post</a></li>
+                                        <li><a href="#">Apply</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 d-lg-none d-xl-block col-md-6">
+                            <div class="footer-widget mb-30">
+                                <div class="footer-heading">
+                                    <h1>Recent Post</h1>
+                                </div>
+                                <div class="recent-post d-flex mb-25">
+                                    <div class="recent-post-thumb">  
+                                        <img src="{% static 'home/img/post/recent_post1.jpg' %}" alt="">
+                                    </div>
+                                    <div class="recent-post-text">
+                                        <p>Blind student from Bolton lands a job with BT</p>
+                                        <div class="footer-time">
+                                            <span class="ti-time"></span>
+                                            <span class="footer-published-time">24 Jan 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent-post d-flex">
+                                    <div class="recent-post-thumb">
+                                        <img src="{% static 'home/img/post/recent_post1.jpg' %}" alt="">
+                                    </div>
+                                    <div class="recent-post-text">
+                                        <p>Important information for graduates 2021</p>
+                                        <div class="footer-time">
+                                            <span class="ti-time"></span>
+                                            <span class="footer-published-time">13 Jan 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4  col-md-6">
+                            <div class="footer-widget mb-30">
+                                <div class="footer-heading">
+                                    <h1>Contact Us</h1>
+                                </div>
+                                <div class="footer-contact-list">
+                                    <div class="single-footer-contact-info">
+                                        <span class="ti-headphone "></span>
+                                        <span class="footer-contact-list-text">+44 (0)1204 900 600</span>
+                                    </div>
+                                    <div class="single-footer-contact-info">
+                                        <span class="ti-email "></span>
+                                        <span class="footer-contact-list-text">enquiries@bolton.ac.uk</span>
+                                    </div>
+                                    <div class="single-footer-contact-info">
+                                        <span class="ti-location-pin"></span>
+                                        <span class="footer-contact-list-text">University of Bolton, Deane Road, Bolton, BL3 5AB</span>
+                                    </div>
+                                </div>
+                                <div class="opening-time">
+                                    <span>Opening Hours</span>
+                                    <span class="opening-date">
+                                        Monday - Friday : 9:00 am - 05:00 pm
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom pt-25 pb-25">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="footer-copyright text-center">
+                                    <span>© 2021 University of Bolton</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <!-- JS here -->
+    <script src="{% static 'home/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'home/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'home/js/popper.min.js' %}"></script>
+    <script src="{% static 'home/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'home/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'home/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'home/js/one-page-nav-min.js' %}"></script>
+    <script src="{% static 'home/js/slick.min.js' %}"></script>
+    <script src="{% static 'home/js/ajax-form.js' %}"></script>
+    <script src="{% static 'home/js/wow.min.js' %}"></script>
+    <script src="{% static 'home/js/jquery.meanmenu.min.js' %}"></script>
+    <script src="{% static 'home/js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'home/js/jquery.barfiller.js' %}"></script>
+    <script src="{% static 'home/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'home/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'home/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'home/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'home/js/plugins.js' %}"></script>
+    <script src="{% static 'home/js/main.js' %}"></script>
+</body>
+</html>

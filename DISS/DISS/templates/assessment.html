@@ -1,0 +1,162 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <!-- index.html  21 Nov 2019 03:44:50 GMT -->
+  <head>
+      <meta charset="UTF-8">
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+      <title>Student Dashboard</title>
+      <!-- General CSS Files -->
+      <link rel="stylesheet" href="{% static 'assets/css/app.min.css' %}">
+      <!-- Template CSS -->
+      <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+      <link
+      rel="stylesheet" href="{% static 'assets/css/components.css' %}">
+      <!-- Custom style CSS -->
+      <link rel="stylesheet" href="{% static 'assets/css/custom.css' %}">
+      <link rel='shortcut icon' type='image/x-icon' href="{% static 'assets/img/favicon.ico' %}"/>
+  </head>
+
+  <body>
+    <div class="loader"></div>
+      <div id="app">
+          <div class="main-wrapper main-wrapper-1">
+              <div class="navbar-bg"></div>
+              <nav class="navbar navbar-expand-lg main-navbar sticky">
+                  <div class="form-inline mr-auto">
+                      <ul class="navbar-nav mr-3">
+                          <li>
+                              <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg collapse-btn">
+                                  <i data-feather="align-justify"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                                  <i data-feather="maximize"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <form class="form-inline mr-auto">
+                                  <div class="search-element">
+                                      <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="200">
+                                      <button class="btn" type="submit">
+                                          <i class="fas fa-search"></i>
+                                      </button>
+                                  </div>
+                              </form>
+                          </li>
+                      </ul>
+                  </div>
+                  <ul class="navbar-nav navbar-right">
+                      <li></li>
+                  </a>
+                  <a href="{% url 'home' %}" class="dropdown-item has-icon">LOG OUT
+                  </a>
+              </li>
+          </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+          <div class="sidebar-brand">
+              <a href="{% url 'StudentCourses' user %}">
+                  <img alt="image" src="{% static 'assets/img/logo.png' %}" class="header-logo"/>
+                  <span class="logo-name">STUDENT</span>
+              </a>
+          </div>
+          <ul class="sidebar-menu">
+              <li class="menu-header">Main</li>
+              <li class="dropdown"> 
+                  <a href="{% url 'StudentCourses' user %}" class="nav-link">
+                      <i data-feather="monitor"></i>
+                      <span>My courses</span>
+                  </a>
+              </li>
+          </ul>
+          </aside>
+      </div>
+      
+      <div class="main-content">
+        <section class="section">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Diagnostic Assessment</h4>
+                </div>
+                
+                <div class="card-body">
+                  <div class="form-group">
+                    <form action = " " method = "POST" name="submission" >
+                      {%csrf_token%}
+                      <label>Choose a programme:</label>
+                      <select name="programme" id="programme" class="form-control">
+                        <option value="P00001">Software Engineering</option>
+                        <option value="P00002">Computing</option>
+                      </select> <br>
+                  
+                      <label>I am experienced in software development:</label><br>
+                      <input type="radio" id="not_confident" name="rating1" value="1">
+                      <label for="not_confident">Not Confident</label><br>
+                      <input type="radio" id="somewhat_confident" name="rating1" value="2">
+                      <label for="somewhat_confident">Somewhat Confident</label><br>
+                      <input type="radio" id="confident" name="rating1" value="3">
+                      <label for="confident">Confident</label><br>
+                      <input type="radio" id="very_confident" name="rating1" value="4">
+                      <label for="very_confident">Very Confident</label><br><br>
+                    
+                      <label>I am experienced in web development:</label><br>
+                      <input type="radio" id="not_confident" name="rating2" value="1">
+                      <label for="not_confident">Not Confident</label><br>
+                      <input type="radio" id="somewhat_confident" name="rating2" value="2">
+                      <label for="somewhat_confident">Somewhat Confident</label><br>
+                      <input type="radio" id="confident" name="rating2" value="3">
+                      <label for="confident">Confident</label><br>
+                      <input type="radio" id="very_confident" name="rating2" value="4">
+                      <label for="very_confident">Very Confident</label><br><br>
+                    
+                      <label>I am experienced in Database Design:</label><br>
+                      <input type="radio" id="not_confident" name="rating3" value="1">
+                      <label for="not_confident">Not Confident</label><br>
+                      <input type="radio" id="somewhat_confident" name="rating3" value="2">
+                      <label for="somewhat_confident">Somewhat Confident</label><br>
+                      <input type="radio" id="confident" name="rating3" value="3">
+                      <label for="confident">Confident</label><br>
+                      <input type="radio" id="very_confident" name="rating3" value="4">
+                      <label for="very_confident">Very Confident</label><br><br>
+                    
+                      <label>I am both proficient with mathematical techniques and mental numerical reasoning:</label><br>
+                      <input type="radio" id="not_confident" name="rating4" value="1">
+                      <label for="not_confident">Not Confident</label><br>
+                      <input type="radio" id="somewhat_confident" name="rating4" value="2">
+                      <label for="somewhat_confident">Somewhat Confident</label><br>
+                      <input type="radio" id="confident" name="rating4" value="3">
+                      <label for="confident">Confident</label><br>
+                      <input type="radio" id="very_confident" name="rating4" value="4">
+                      <label for="very_confident">Very Confident</label><br><br>
+                    
+                      <p><input class="btn btn-primary mr-1" type="submit" value="Submit"></p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+
+<!-- General JS Scripts -->
+<script src="{% static 'assets/js/app.min.js' %}"></script>
+<!-- JS Libraies -->
+<script src="{% static 'assets/bundles/apexcharts/apexcharts.min.js' %}"></script>
+<!-- Page Specific JS File -->
+<script src="{% static 'assets/js/page/index.js' %}"></script>
+<!-- Template JS File -->
+<script src="{% static 'assets/js/scripts.js' %}"></script>
+<!-- Custom JS File -->
+<script src="{% static 'assets/js/custom.js' %}"></script>
+</body><!-- index.html  21 Nov 2019 03:47:04 GMT -->
+</html>
+    
